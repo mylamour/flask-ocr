@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple OCR Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+      <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" media="screen">
+      <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" media="screen">
+      <link href="{{ url_for('static', filename='css/dropzone.css') }}" rel="stylesheet" media="screen">
+  </head>
+
+   <body>
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/libs/jquery-3.2.1.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/libs/dropzone.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/libs/bootstrap.js') }}"></script>
+
+  </body>
+
+</html>
