@@ -1,5 +1,5 @@
 #!/usr/bin/env python 
-
+#coding:utf-8
 import pytesseract
 import urllib
 import cv2
